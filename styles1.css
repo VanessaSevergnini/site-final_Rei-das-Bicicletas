@@ -1,0 +1,154 @@
+/* styles.css */
+
+/* Fundo da página */
+body {
+    background-color: #8f8f8f; 
+}
+
+/* Container de Promoção */
+.promo-container {
+    background-color: #ffeb3b;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Header */
+.header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 60px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.search-container input {
+    flex: 1;
+    padding: 5px;
+}
+
+.search-container button {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.icons-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.icons-container .icon {
+    font-size: 1.5em;
+    color: #333;
+    text-decoration: none;
+}
+
+.icons-container .icon:hover {
+    color: #007bff;
+}
+
+/* Menu Principal */
+.main-menu {
+    background-color: #4d4747;
+    color: #6e6b6b;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff;
+}
+
+/* Container Principal */
+.price {
+    font-size: 2em;
+    color: #ff0000;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.description, .reviews, .specifications, .installments {
+    margin-top: 20px;
+}
+
+.review-stars {
+    color: gold;
+}
+
+.social-icons i {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Produtos Relacionados */
+.related-products {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.related-products h3 {
+    margin-bottom: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1.2em;
+    color: #ff0000;
+}
+
+.btn-primary {
+    width: 100%;
+}

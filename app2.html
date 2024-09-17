@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rei das Bicicletas</title>
+    <link rel="icon" href="logo2.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 2em;
+            color: #007bff;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product h2 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+        .product p {
+            font-size: 1em;
+            color: #333;
+            margin: 0 15px 15px;
+        }
+        .product .price {
+            font-size: 1.2em;
+            color: #007bff;
+            margin: 0 15px 15px;
+        }
+        .product button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        .product button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="promo-container">
+        <p>Promoção Especial! Até 20% de desconto em todos os acessórios!</p>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="logo2.png" alt="Logo Rei das Bicicletas" class="logo">
+            <h1>Rei das Bicicletas</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Olá, o que você procura?">
+            <button>Buscar</button>
+        </div>
+        <div class="icons-container">
+            <a href="https:/www.instagram.com/casa_das_bicicletas_cacador?igsh=MWN6d3B4MTUweGFqdQ==" class="icon" data-tooltip="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/casa.dasbicicletas.37?mibextid=ZbWKwl" class="icon" data-tooltip="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="login.html" class="icon" data-tooltip="Minha Conta"><i class="bi bi-person"></i></a>
+            <a href="cadastro.html" class="icon" data-tooltip="Cadastre-se"><i class="bi bi-person-plus"></i></a>
+            <a href="carrinho.html" class="icon" data-tooltip="Carrinho"><i class="bi bi-cart"></i></a>
+        </div>
+    </header>
+
+    <nav class="main-menu">
+        <ul>
+            <li><a href="teste.html">Home</a></li>
+            <li><a href="produtos.html">Bicicletas</a></li>
+            <li><a href="componentes.html">Componentes</a></li>
+            <li><a href="acessorios.html">Acessórios</a></li>
+            <li><a href="#">Ferramentas</a></li>
+            <li><a href="#">Vestuário e Proteções</a></li>
+            <li><a href="sitepromo1.html">Promoções</a></li>
+            <li><a href="app2.html">Monte a Sua Bike</a></li>
+        </ul>
+    </nav>
+        
+    <div class="container">
+        <!-- Seção de Bicicletas -->
+        <section>
+            <h2 class="section-title">Bicicletas</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="bicicleta3.jpg">
+                    <h2>Bicicleta A</h2>
+                    <p>Descrição da Bicicleta A. Ótima para trilhas e passeios.</p>
+                    <p class="price">R$ 1.000,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="bicicleta2.jpg">
+                    <h2>Bicicleta B</h2>
+                    <p>Descrição da Bicicleta B. Ideal para ciclistas urbanos.</p>
+                    <p class="price">R$ 800,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+             <img src="bicicleta1.jpg">
+                    <h2>Bicicleta C</h2>
+                    <p>Descrição da Bicicleta C. Excelente para competições.</p>
+                    <p class="price">R$ 1.500,00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Equipamentos -->
+        <section>
+            <h2 class="section-title">Equipamentos</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="capacete11.jpg">
+                    <h2>Capacete</h2>
+                    <p>Capacete confortável e seguro para ciclistas.</p>
+                    <p class="price">R$ 150,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="luva1.jpg">
+                    <h2>Luvas</h2>
+                    <p>Luvas de ciclismo com boa aderência e proteção.</p>
+                    <p class="price">R$ 80,00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Acessórios -->
+        <section>
+            <h2 class="section-title">Acessórios</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="sino.jpg">
+                    <h2>Sino</h2>
+                    <p>Sino para bicicletas, essencial para segurança.</p>
+                    <p class="price">R$ 30,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="lanterna.jpg">
+                    <h2>Lanterna</h2>
+                    <p>Lanterna dianteira e traseira para maior visibilidade.</p>
+                    <p class="price">R$ 60,00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Peças -->
+        <section>
+            <h2 class="section-title">Peças</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="pedais1.jpg">
+                    <h2>Pedais</h2>
+                    <p>Pedais de alta durabilidade e desempenho.</p>
+                    <p class="price">R$ 100,00</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product">
+                    <img src="pneu.jpg">
+                    <h2>Pneus</h2>
+                    <p>Pneus de qualidade para diferentes tipos de terreno.</p>
+                    <p class="price">R$ 120,00</p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="info-container">
+        <div class="info-column">
+            <h2>Saiba Mais</h2>
+            <a href="sobreNos.html">Sobre o Rei das Bicicletas</a>
+            <a href="#">Nossa Equipe</a>
+            <a href="#">Pagamento e Segurança</a>
+            <a href="#">Acompanhe o seu pedido</a>
+            <a href="#">Devoluções</a>
+            <a href="#">Garantia</a>
+            <a href="#">Avaliações dos Consumidores</a>
+            <a href="#">Política de Privacidade</a>
+
+        </div>
+        <div class="info-column">
+            <h2>Menu</h2>
+            <a href="produtos.html">Bicicletas</a>
+            <a href="componentes.html">Componentes</a>
+            <a href="acessorios.html">Acessórios</a>
+            <a href="#">Ferramentas</a>
+            <a href="#">Vestuário e Proteção</a>
+            <a href="sitepromo1.html">Promoções</a>
+            <a href="app2.html">Monte a sua Bike</a>
+        </div>
+        <div class="info-column">
+            <h2>Central de Atendimento</h2>
+            <a href="#" target="_blank"><i class="bi bi-whatsapp"></i> (49)9 9999-0000</a>
+            <a href="#"><i class="bi bi-envelope"></i> E-mail: atendimento@reidasbicicletas.com.br</a>
+        </div>
+    </section>
+
+    <footer class="developer-info">
+        <p>Desenvolvido por <strong>JJQVY Desenvolvimento de Sites</strong></p>
+        <p>© 2024 Rei das Bicicletas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+    

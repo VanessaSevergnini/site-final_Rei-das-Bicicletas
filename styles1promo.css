@@ -1,0 +1,468 @@
+/* Reset Básico */
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Container de Promoção */
+.promo-container {
+    background-color: hsl(51, 98%, 51%);
+    padding: 10px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo {
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.search-container input {
+    padding: 5px;
+    width: 400px;
+    font-style: italic;
+}
+
+.search-container button {
+    padding: 5px;
+    background-color: #fdd805;
+    border: none;
+    cursor: pointer;
+}
+
+.icons-container{
+    position: relative;
+}
+
+.icons-container a {
+    margin: 0 5px;
+    color:#f4f4f4;
+    text-decoration: none;
+    font-size: 24px;
+    position: relative;
+}
+
+.icons-container a::after{
+    content: attr(data-tooltip);
+    position:absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    font-size: 12px;
+}
+
+.icons-container a:hover::after,
+.icons-container a:focus::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.icons-container i {
+    vertical-align: middle;
+}
+
+.icons-container img {
+    width: 24px;
+    height: auto;
+}
+
+.main-menu {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.main-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu ul li {
+    margin: 0 15px;
+}
+
+.main-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+
+.main-menu ul li a:hover {
+    background-color: #ffe602ee;
+    border-radius: 3px;
+}
+
+/* Carrossel */
+.carousel-inner img {
+    width: 100%;
+    height: 750px; /* Ajuste conforme necessário */
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+/* Links de Informações */
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+}
+
+.info-column {
+    flex: 1;
+    margin: 0px 80px;
+    color:#fdd805;
+}
+
+.info-column h2 {
+    margin-bottom: 10px;
+}
+
+.info-column a {
+    display: block;
+    margin-bottom: 5px;
+    color: #ebe6e6;
+    text-decoration: none;
+}
+
+.info-column a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-info input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.developer-info {
+    background-color: #fdd805;
+    padding: 20px;
+    text-align: center;
+}
+
+.developer-info p {
+    margin-bottom: 10px;
+}
+
+.developer-info a {
+    color: #333;
+    text-decoration: none;
+}
+
+.developer-info a:hover {
+    text-decoration: underline;
+}
+
+/*Caixa de Login*/
+.Caixadelogin {
+    width: 350px;
+    height: 450px;
+    border: 10px solid rgb(245, 242, 25);
+    background-color: rgb(245, 242, 25);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.Caixadelogin label {
+    display: block;
+    margin-bottom: 10px;
+    color: #000; 
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.Caixadelogin input {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#buttonlogin {
+    width: 100%;
+    padding: 10px;
+    background-color: #00000098;
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+    font-size: 16px;
+    color:  #ccc;
+    margin-top: 25px;
+}
+
+.Titulo {
+    margin-top: 10px;
+    background-color: rgb(245, 242, 25); 
+    color: #000; 
+    text-align: center; 
+    margin-bottom: 20px;
+    padding: 0px; 
+    border-radius: 10px;
+    width: 300px;
+    border: 10px solid rgb(245, 242, 25);
+}
+
+.Login {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000000ac;
+}
+
+#loginesqueciasenha{ 
+    color: rgb(119, 113, 113);
+    text-decoration: none; 
+    display: block; 
+    text-align: center; 
+    margin-top: 10px;
+}
+
+/*Cadastrar*/
+.Cadastro{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #000000ac;
+}
+.cadastro-container {
+    background-color: #fbf42e;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 10px; 
+}
+/* Estilos para o Fieldset */
+.cadastro-container fieldset {
+    border: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+/* Estilos para o Legend */
+.cadastro-container legend {
+    font-size: 1.5em; 
+    margin-bottom: 15px; 
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos para as Linhas do Formulário */
+.cadastro-container .form-row {
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 10px;
+}
+
+/* Estilos para os Grupos de Formulário */
+.cadastro-container .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+/* Remove o margin-right do último item para evitar o espaçamento extra */
+.cadastro-container .form-group:last-child {
+    margin-right: 0; 
+}
+
+/* Estilos para os Labels */
+.cadastro-container label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Estilos para os Campos de Entrada */
+.cadastro-container input[type="text"],
+.cadastro-container input[type="number"],
+.cadastro-container input[type="tel"],
+.cadastro-container input[type="date"],
+.cadastro-container input[type="password"],
+.cadastro-container input[type="email"] {
+    width: 100%;
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilos para o Botão */
+.cadastro-container button {
+    background-color:#00000098;
+    color: white; 
+    border: none;
+    padding: 10px; 
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.cadastro-container button:hover {
+    background-color: #000000cd;
+}
+
+
+
+
+/* Tela de produtos */
+.product-page {
+    display: flex;
+    padding: 20px;
+    background-color:  #24242468;
+}
+
+.product-page .filter {
+    width: 25%;
+    padding: 30px;
+    background-color: #433e3e68;
+    box-shadow: 2px 0 5px rgba(188, 180, 180, 0.194);
+    border-right: 1px solid rgba(188, 180, 180, 0.193);
+    color: #171710;
+}
+
+.product-page .filter h2 {
+    margin-top: 0;
+    color: #fffb1f;
+}
+
+.product-page .filter label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fffb1f;
+}
+
+.product-page .filter input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.product-page .filter select, .product-page .filter input[type="range"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #fffb1f;
+}
+
+.product-page .product-list {
+    width: 75%;
+    padding: 20px;
+    background-color: #433e3e68;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de largura igual */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.product-page .product-item {
+    display: flex;
+    flex-direction: column; /* Coloca a imagem e os detalhes em coluna */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    color: #000; /* Garantia de que o texto está legível sobre o fundo branco */
+}
+
+.product-page .product-item img {
+    max-width: 100%; /* Ajusta a largura da imagem para ocupar toda a largura disponível do item */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+}
+
+.product-page .product-item .details {
+    flex-grow: 1;
+}
+
+.product-page .product-item .details h3 {
+    margin: 0;
+}
+
+.product-page .product-item .details p {
+    margin: 10px 0;
+}
+
+.product-page .product-item .details a {
+    color: #d9c91c;
+    text-decoration: none;
+}
+
+.product-page .product-item .details a:hover {
+    text-decoration: underline;
+}
